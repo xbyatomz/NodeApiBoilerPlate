@@ -13,6 +13,6 @@ module.exports = function (app) {
    * in the request
    */
   app.get('/test', (Request, Response) => {
-    return Response.status(200).send(Request);
+    return Response.status(200).send('Successful Request To Your API');
   });
 }
