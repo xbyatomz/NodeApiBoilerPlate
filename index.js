@@ -7,8 +7,8 @@ const dotenv = require('dotenv');
 /**
  * Set up the ENV config. Using an ENV file is common practise
  * and is used to specify important runtime settings and configs
- * that would required during the applicqtion. Please see the included 
- * `.env` file as an example
+ * that would be required during the applicqtion. Please see the included 
+ * `.env.example` file as an example
  */
 dotenv.config();
 
@@ -39,7 +39,7 @@ app.options('*', cors());
 // app.use(express.static('public'));
 
 /**
- * Another consideration to make would be to see if someone tries
+ * Another consideration to make would be to redirect the user when someone tries
  * to hit your api directly. this would be done via hitting 
  * `yourdomain.com/`. However you may not want the user to see anything
  * or view a 404 page. This could be done by setting up a redirect 
